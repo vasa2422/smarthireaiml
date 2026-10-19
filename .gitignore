@@ -15,6 +15,7 @@ __pycache__/
 data/raw/
 data/processed/
 models/*.pkl
+!models/resume_classifier_eda.pkl
 
 # Notebook outputs
 .ipynb_checkpoints/
