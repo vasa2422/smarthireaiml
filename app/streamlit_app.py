@@ -19,6 +19,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 ROOT = Path(__file__).resolve().parent.parent
 MODEL_PATH = ROOT / "models" / "resume_classifier_eda.pkl"
 JOBS_PATH = ROOT / "data" / "processed" / "cleaned_jobs.csv"
+if not JOBS_PATH.exists():
+    JOBS_PATH = ROOT / "data" / "sample_jobs.csv"
 
 st.set_page_config(
     page_title="SmartHire | Career Guidance",
